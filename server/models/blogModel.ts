@@ -13,13 +13,13 @@ const blogSchema = new mongoose.Schema({
   content: {
     type: String,
     require: true,
-    minLength: 2000
+    minLength: 200
   },
   description: {
     type: String,
     require: true,
     trim: true,
-    minLength: 50,
+    minLength: 10,
     maxLength: 200
   },
   thumbnail:{
